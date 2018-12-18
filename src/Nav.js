@@ -1,27 +1,25 @@
+import React from "react";
+import pizzaIcon from "./pizzaicon.png";
+import { Navbar, Nav } from "react-bootstrap";
 
-import React from 'react'
+const Navs = () => {
+	return (
+		<Navbar className="sticky-top">
+			<Navbar.Header>
+				<Navbar.Brand className="navbar-brand">
+					 
+					<a href="#" style={{ fontSize: "1em", color: "black"}}>
+						<img src={pizzaIcon} style={{ height: "45px", paddingRight: "150px"}} />
+					</a>
+				</Navbar.Brand>
+				<Navbar.Toggle />
+			</Navbar.Header>
+			<Navbar.Text>
+			
+				<a href="#menu" style={{color: "black", fontSize: "2em"}}>Menu</a>
+			</Navbar.Text>
+		</Navbar>
+	);
+};
 
-
-const Nav = () => {
-
-return (
-<nav className="navbar navbar-default">
-  <div className="container-fluid">
-    <div className="navbar-header">
-    <p className="navbar-text">Menu</p>
-      <a className="navbar-brand" href="#">
-        <img alt="Brand" src="..."/>
-      </a>
-    </div>
-  </div>
-</nav>
-	)
-
-
-}
-
-
-
-
-
-export default Nav
+export default Navs;
